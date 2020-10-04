@@ -1,0 +1,35 @@
+﻿@model MovieGuide.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Movie Details:</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MovieName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MovieName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.con)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.con.GenreName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-dark text-white"  asp-action="Edit" asp-route-id="@Model.MovieID">Edit</a> |
+    <a class="text-white" asp-action="Index">Back</a>
+</div>

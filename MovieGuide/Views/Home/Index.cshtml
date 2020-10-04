@@ -1,0 +1,130 @@
+﻿@model IEnumerable<MovieGuide.Models.Photo>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Movie Guide</h1>
+    <p class="text-justify">MOVIEGUIDE is a community that provides assistance & information on all the movies released world wide, including the genre of movie, date of release star rating etc. So that people can plan and sort their field of interest accordingly.</p>
+    <p class="text-justify">Movie Guide is a digital media brand that explores movie and streaming entertainment, serves fans, and helps people decide what to watch next – on any platform. You can count on Movie Guide’s bicoastal team of entertainment editors to guide your TV and streaming viewing experience with honest reviews, curated recommendations, breaking news, in-depth interviews, smart recaps, fun videos, and more immersive content that digs deep into your TV obsessions.</p>
+</div>
+
+<div class="container my-4">
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--/.Controls-->
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/1.jpg"
+                                 alt="Card image cap">                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/2.jpg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/3.jpg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/4.jpg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/5.jpeg"
+                                 alt="Card image cap">
+                           
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/6.jpeg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/7.jpg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/8.jpg"
+                                 alt="Card image cap">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                            <img class="card-img-top" style="height:250px;" src="~/Movies/9.jpg"
+                                 alt="Card image cap">
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+</div>

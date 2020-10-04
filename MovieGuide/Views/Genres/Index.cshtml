@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MovieGuide.Models.Genre>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Genre Details:</h1>
+
+<p>
+    <a class="btn btn-dark text-white" asp-action="Create">Add New Genre</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GenreName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreName)
+            </td>
+            <td>
+                <a class="btn btn-dark text-white" asp-action="Edit" asp-route-id="@item.GenreID">Edit</a> |
+                <a class="btn btn-dark text-white" asp-action="Details" asp-route-id="@item.GenreID">Details</a> |
+                <a  class="btn btn-dark text-white" asp-action="Delete" asp-route-id="@item.GenreID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

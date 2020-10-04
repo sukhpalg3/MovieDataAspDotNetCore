@@ -1,0 +1,39 @@
+﻿@model MovieGuide.Models.Photo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit:</h1>
+
+<h4>Photo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PhotoID" />
+            <div class="form-group">
+                <label asp-for="ExtName" class="control-label"></label>
+                <input asp-for="ExtName" class="form-control" />
+                <span asp-validation-for="ExtName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MovieID" class="control-label"></label>
+                <select asp-for="MovieID" class="form-control" asp-items="ViewBag.MovieID"></select>
+                <span asp-validation-for="MovieID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

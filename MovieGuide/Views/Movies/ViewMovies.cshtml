@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "ViewMovies";
+}
+<div class="text-center">
+    <h1 class="display-4">Movie To Watch:</h1>
+</div>
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@item.MovieName</h5>
+                <p class="card-text">@item.con.GenreName</p>
+              
+                <a class="btn btn-primary" asp-action="MovieDetails" asp-route-id="@item.MovieID">Explore Movies</a>
+            </div>
+        </div>
+    }
+</div>
+
